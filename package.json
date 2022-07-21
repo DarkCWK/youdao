@@ -1,0 +1,54 @@
+{
+  "name": "youdao",
+  "displayName": "有道翻译",
+  "description": "自用的 Comment Translate 翻译源插件",
+  "publisher": "DarkCWK",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.52.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "translateSource",
+    "comment translate"
+  ],
+  "activationEvents": [],
+  "contributes": {
+    "configuration": {},
+    "translates": [
+      {
+        "translate": "youdao",
+        "title": "Youdao Translate"
+      }
+    ]
+  },
+  "extensionDependencies": [
+    "intellsmi.comment-translate"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.52.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "@vscode/test-electron": "^2.1.5",
+    "comment-translate-manager": "^0.0.3",
+    "eslint": "^8.18.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4",
+    "vsce": "^2.10.0"
+  }
+}
