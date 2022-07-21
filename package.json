@@ -4,6 +4,14 @@
   "description": "自用的 Comment Translate 翻译源插件",
   "publisher": "DarkCWK",
   "version": "0.0.1",
+  "homepage": "https://github.com/DarkCWK/youdao",
+  "bugs": {
+    "url": "https://github.com/DarkCWK/youdao/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarkCWK/youdao.git"
+  },
   "engines": {
     "vscode": "^1.52.0"
   },
