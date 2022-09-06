@@ -3,7 +3,7 @@
   "displayName": "有道翻译",
   "description": "自用的 Comment Translate 翻译源插件",
   "publisher": "DarkCWK",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "homepage": "https://github.com/DarkCWK/youdao",
   "bugs": {
     "url": "https://github.com/DarkCWK/youdao/issues"
@@ -57,6 +57,6 @@
     "glob": "^8.0.3",
     "mocha": "^10.0.0",
     "typescript": "^4.7.4",
-    "vsce": "^2.10.0"
+    "vsce": "^2.11.0"
   }
 }
