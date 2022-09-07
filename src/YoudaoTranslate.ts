@@ -102,14 +102,13 @@ export default class YoudaoTranslate implements ITranslate {
           let result = JSON.parse(v.toString("utf-8"));
           if (result.errorCode == 0) {
             let tgt = "";
-            for (const translateRowResult of result.translateResult) {
-              for (const translateResult of translateRowResult) {
-                tgt += translateResult.tgt;
-              }
-              tgt += "\n";
-            }
+            for (let i = 0; i < result.translateResult.length; i++) {
+              let translateRowResult = result.translateResult[i];
 
-            console.log(tgt);
+              for (const translateResult of translateRowResult) tgt += translateResult.tgt;
+
+              if (i !== result.translateResult.length - 1) tgt += "\n";
+            }
 
             resolve(tgt);
           }
